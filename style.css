@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap');
+
+:root {
+    --cor-do-fundo-todo: #57007f;
+    --cor-de-fundo: #87CEEB;
+    --cor-do-botao: #69f6e1;
+    --cor-do-botao-clicado: #8cffee;
+    --cor-da-borda: #000000;
+    --fonte-principal: "Sedan SC", serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    background-image: linear-gradient(to left, #1ef7e5, beige);
+}
+
+h1 {
+    font-family: var(--fonte-principal);
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 64px;
+}
+
+.contador {
+    background-color: var(--cor-de-fundo);
+    height: 600px;
+    padding: 20px;
+    border: 1px solid ;
+    border-radius: 10px;
+    width: 1240px;
+    margin: 60px auto;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-gap: 10px;
+  }
+  
+  .button {
+    font-size: 40px;
+    background-color: var(--cor-do-botao);
+    border: 1px solid ;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 32px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: var(--cor-do-botao-clicado);
+  }
+  
+  .counter {
+    background-color: var(--cor-do-botao);
+    font-size: 48px;
+    font-family: var(--fonte-principal);
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid var(--cor-da-borda);
+    border-radius: 10px;
+  }
